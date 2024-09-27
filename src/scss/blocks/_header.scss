@@ -1,0 +1,37 @@
+.header {
+    color: #11293B;
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &__menu {
+        background-color: #E7E9EB;
+        border-radius: 25px;
+        width: 114px;
+        height: 56px;
+        text-align: center;
+    }
+    &__search {
+        background-color: #E7E9EB;
+        border-radius: 25px;
+        width: 200px;
+        height: 56px;
+        text-align: center;
+    }
+
+    &__eng {
+        background-color: #E7E9EB;
+        border-radius: 25px;
+        height: 30px;
+        width: 69px;
+        text-align: center;
+    }
+    &__usd {
+        background-color: #E7E9EB;
+        border-radius: 25px;
+        height: 30px;
+        width: 68px;
+        text-align: center;
+    }
+}
