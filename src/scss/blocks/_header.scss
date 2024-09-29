@@ -1,37 +1,83 @@
-.header {
-    color: #11293B;
-    position: initial;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    &__menu {
-        background-color: #E7E9EB;
-        border-radius: 25px;
-        width: 114px;
-        height: 56px;
-        text-align: center;
+.header{
+    width: 100%;
+    padding-top: 30px;
+    &__container{
+        position: relative;
     }
-    &__search {
-        background-color: #E7E9EB;
-        border-radius: 25px;
-        width: 200px;
-        height: 56px;
-        text-align: center;
-    }
-
-    &__eng {
-        background-color: #E7E9EB;
-        border-radius: 25px;
-        height: 30px;
-        width: 69px;
-        text-align: center;
-    }
-    &__usd {
-        background-color: #E7E9EB;
-        border-radius: 25px;
-        height: 30px;
-        width: 68px;
-        text-align: center;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-left{
+            display: flex;
+            gap: 10px;
+            &-menu{
+                padding: 10px 15px;
+                border-radius: 60px;
+                background-color: #E7E9EB;
+                z-index: 1000;
+            }
+            &-search{
+                padding: 10px 15px;
+                border-radius: 60px;
+                padding-left: 30px;
+                background: url(../../img/icon.svg) no-repeat;
+                background-position: 5px center;
+                background-color: #E7E9EB;
+            }
+        }
+        &-right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 45px;
+            @include tablet{
+                gap: 20px;
+            }   
+            &-icons{
+                display: flex;
+                gap: 30px;
+                @include tablet{
+                    gap: 10px;
+                }
+                @include mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &Card{
+                    display: flex;
+                    gap: 6px;
+                    &Two{
+                        padding: 5px 10px;
+                        background-color: #F67280;
+                        border-radius: 50%;
+                        color: white;
+                    }
+                }
+            }
+            &-choice{
+                display: flex;
+                gap: 10px;
+                @include mobile {
+                    flex-direction: column;
+                }
+                &Lang{
+                    padding: 8px 15px;
+                    background-color: #E7E9EB;
+                    border-radius: 15px;
+                    @include tablet{
+                        padding: 4px 8px;
+                    }
+                }
+                &Curr{
+                    padding: 8px 15px;
+                    background-color: #E7E9EB;
+                    border-radius: 15px;
+                    @include tablet{
+                        padding: 4px 8px;
+                    }
+                }
+            }
+        }
     }
 }

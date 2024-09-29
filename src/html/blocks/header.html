@@ -1,33 +1,46 @@
 <header class="website__header header" id="header">
     <div class="container header__container">
-        <div class="header__row header__row--top">
-            <div class="header__left">
-                <div class="header__list">
-                    <div class="header__menu">
-                        <img src="./img/sidelist.svg" alt="" class="header__menu-img">
-                        <div class="header__menu-name">Menu</div>
-                    </div>
-                    <div class="header__search">
-                        <img src="./img/icon.svg" alt="" class="header__search-img">
-                        <div class="header__search-name">Search</div>
-                    </div>
-                    <img src="./img/Group 32234.svg" alt="" class="header__studio">
+        <div class="header__content">
+            <div class="header__content-left">
+                <nav class="header__content-nav navbar" id="nav">
+                    <menu class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a href="#!" class="navbar__list-link">Главная</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#!" class="navbar__list-link">Заказ</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#!" class="navbar__list-link">Корзина</a>
+                        </li>
+                    </menu>
+                </nav>
+                <button class="header__content-left-menu header__button" id="open">
+                    <i class='header__content-left-menuIcon bx bx-menu-alt-left'></i>
+                    <span class="header__content-left-menuText">Menu</span>
+                </button>
+                <div class="header__content-left-search">
+                    <input type="search" class="header__content-left-serachInput" placeholder="Search">
                 </div>
             </div>
-            <div class="header__right">
-                <div class="header__iconlist">
-                    <img src="./img/User.svg" alt="" class="header__iconlist-1">
-                    <img src="./img/Heart-1.svg" alt="" class="header__iconlist-2">
-                    <img src="./img/Cart-1.svg" alt="" class="header__iconlist-3">
-                </div>
-                <div class="header__menulist">
-                    <div class="header__eng">
-                        <div class="header__eng-name">ENG</div>
-                        <img src="./img/arrow@2x.svg" alt="" class="header__eng-img">
+            <img src="../../img/logo.svg" alt=" Логотип сайта" class="header__content-logo">
+            <div class="header__content-right">
+                <div class="header__content-right-icons">
+                    <img class="header__content-right-iconsUser" src="../../img/User.svg" alt="">
+                    <img class="header__content-right-iconsHeart" src="../../img/Heart.svg" alt="">
+                    <div class="header__content-right-iconsCard">
+                        <img src="../../img/Cart.svg" alt="" class="header__content-right-iconsCardSvg">
+                        <span class="header__content-right-iconsCardTwo">2</span>
                     </div>
-                    <div class="header__usd">
-                        <div class="header__usd-name">USD</div>
-                        <img src="./img/arrow@2x.svg" alt="" class="header__eng-img">
+                </div>
+                <div class="header__content-right-choice">
+                    <div class="header__content-right-choiceLang">
+                        <a class="header__content-right-choiceLangText">ENG</a>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                    <div class="header__content-right-choiceCurr">
+                        <a class="header__content-right-choiceCurrText">USD</a>
+                        <i class='bx bx-chevron-down'></i>
                     </div>
                 </div>
             </div>

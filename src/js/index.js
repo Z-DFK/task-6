@@ -7,5 +7,12 @@ Fancybox.bind('[data-fancybox]', {
 });
 
 // Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+{
+let nav = document.getElementById("nav"),
+    button = document.getElementById("open")
+    button.addEventListener("click", () => {
+      nav.classList.toggle('navbar--active')
+    });
+};
+import bannerSlider from './modules/banner.js';
+bannerSlider();

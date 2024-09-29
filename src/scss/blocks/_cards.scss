@@ -1,0 +1,105 @@
+.product {
+    width: 100%;
+    padding-top: 40px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding: 0;
+        margin-bottom: 65px;
+        @include small-tablet{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &-image {
+            background-color: #7BE498;
+            padding-bottom: 40px;
+            border-radius: 36px;
+            &--second{
+                background-color: #F5E6FF;
+            }
+            &--third{
+                background-color: #F7C29B;
+            }
+            &--second{
+                background-color: #68EAEB;
+            }
+            &Picture{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-title {
+            padding-top: 30px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &-price {
+            color: #FD4E61;
+
+            &--discount {
+                color: black;
+            }
+        }
+
+        &-colors {
+            padding-top: 15px;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding-bottom: 15px;
+            @include small-tablet{
+                gap: 15px;
+            }
+            &-text {
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 10px;
+                color: #458EF6;
+                padding: 5px 20px 10px 20px;
+                background-color: #b3d3ff;
+                border-radius: 25px;
+            }
+        }
+        &-block{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: #E7E9EB;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            border-radius: 36px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        &-new{
+            position: absolute;
+            top: 0;
+            z-index: 2;
+        }
+        &-hot{
+            position: absolute;
+            top: 0;
+            left: 35px;
+            z-index: 1;
+        }
+        &-sale{
+            position: absolute;
+            top: 0;
+        }
+    }
+}
