@@ -25,14 +25,18 @@
             background-color: #7BE498;
             padding-bottom: 40px;
             border-radius: 36px;
+            padding-top: 1px;
             &--second{
                 background-color: #F5E6FF;
+                padding-top: 33px;
             }
             &--third{
                 background-color: #F7C29B;
+                padding-top: 20px;
             }
-            &--second{
+            &--fourth{
                 background-color: #68EAEB;
+                padding-top: 5px;
             }
             &Picture{
                 width: 100%;
@@ -49,7 +53,7 @@
 
         &-price {
             color: #FD4E61;
-
+            font-size: 23px;
             &--discount {
                 color: black;
             }
@@ -100,6 +104,9 @@
         &-sale{
             position: absolute;
             top: 0;
+        }
+        &-link {
+            font-size: 20px;
         }
     }
 }
